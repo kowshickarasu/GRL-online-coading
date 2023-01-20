@@ -1,0 +1,32 @@
+import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+
+public class SpeedCalculator
+{
+	 static float speedcal(float d,float h)
+	{
+		float Speed = d/h;
+		return Speed;
+	}
+	
+	
+	
+	public static void main(String[] args)
+	{
+		
+		float distance=0;
+		float time=0;
+		float speed=0;
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Distance");
+		distance=sc.nextFloat();
+		System.out.println("Enter the Time");
+		time=sc.nextFloat();
+		speed=speedcal(distance,time);
+		
+		System.out.println(speed);
+	}
+	
+}
